@@ -1,0 +1,60 @@
+{
+  "name": "react-phone",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A modern, production-ready WebRTC softphone built with React 19, TypeScript, Tailwind CSS v4, and JsSIP",
+  "author": "Erik Bos <https://github.com/3monthsfree>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3monthsfree/React-Phone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3monthsfree/React-Phone/issues"
+  },
+  "homepage": "https://github.com/3monthsfree/React-Phone#readme",
+  "keywords": [
+    "webrtc",
+    "sip",
+    "voip",
+    "phone",
+    "softphone",
+    "jssip",
+    "react",
+    "typescript",
+    "tailwindcss"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "@types/jssip": "^3.5.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "jssip": "^3.10.1",
+    "lucide-react": "^0.548.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.16"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.38.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.4.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^7.1.12"
+  }
+}
