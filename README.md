@@ -20,6 +20,7 @@ A modern, production-ready WebRTC softphone built with React 19, TypeScript, Tai
 Modern WebRTC Phone is a fully-featured, browser-based softphone that enables voice calls over the internet using WebRTC technology. Built with the latest web technologies, it provides a clean, intuitive interface for making and receiving SIP calls directly from your browser—no plugins required.
 
 **Perfect for:**
+
 - Building custom VoIP solutions
 - Integrating voice calling into web applications
 - Creating customer support tools
@@ -29,6 +30,7 @@ Modern WebRTC Phone is a fully-featured, browser-based softphone that enables vo
 ## ✨ Features
 
 ### Core Functionality
+
 - 🎙️ **Crystal Clear Audio** - High-quality voice calls using WebRTC
 - 📞 **Full Call Control** - Make, receive, answer, and hang up calls
 - 🔇 **Mute/Unmute** - Control your microphone during calls
@@ -36,6 +38,7 @@ Modern WebRTC Phone is a fully-featured, browser-based softphone that enables vo
 - 🔄 **Auto-reconnect** - Automatic reconnection on network issues
 
 ### Technical Excellence
+
 - ⚡ **Modern Stack** - React 19, TypeScript, Vite, Tailwind CSS v4
 - 🎨 **Beautiful UI** - Clean, responsive design with smooth animations
 - 💾 **Persistent Settings** - Configuration saved in localStorage
@@ -45,6 +48,7 @@ Modern WebRTC Phone is a fully-featured, browser-based softphone that enables vo
 - 🎯 **STUN/TURN Support** - NAT traversal for reliable connections
 
 ### Developer Friendly
+
 - 📦 **Zero Configuration** - Works out of the box
 - 🔧 **Easy Customization** - Clean, modular code structure
 - 📝 **TypeScript** - Full type safety and IntelliSense
@@ -55,20 +59,23 @@ Modern WebRTC Phone is a fully-featured, browser-based softphone that enables vo
 
 ![Modern WebRTC Phone Interface](https://via.placeholder.com/800x600/1e293b/ffffff?text=Modern+WebRTC+Phone)
 
-*A sleek, modern interface for browser-based calling*
+_A sleek, modern interface for browser-based calling_
 
 ## 📋 Requirements
 
 ### Browser Support
+
 - ✅ Chrome/Edge 90+ (recommended)
 - ✅ Firefox 88+
 - ✅ Safari 14+ (with limitations)
 - ✅ Opera 76+
 
 ### SIP Provider
+
 You need a **WebRTC-compatible SIP provider** with WebSocket support:
 
 #### ✅ Compatible Providers
+
 - [Twilio](https://www.twilio.com/) - Enterprise-grade, excellent documentation
 - [Plivo](https://www.plivo.com/) - Developer-friendly, competitive pricing
 - [Bandwidth.com](https://www.bandwidth.com/) - Carrier-grade infrastructure
@@ -76,10 +83,12 @@ You need a **WebRTC-compatible SIP provider** with WebSocket support:
 - **Self-hosted**: Asterisk, FreeSWITCH, Kamailio (with WebRTC configured)
 
 #### ❌ Incompatible Providers
+
 - VoIP.ms (no WebSocket/WebRTC support)
 - Most traditional SIP providers without WebSocket endpoints
 
 ### System Requirements
+
 - Node.js 18+ (for development)
 - Modern web browser with WebRTC support
 - Microphone access
@@ -121,28 +130,31 @@ The optimized build will be in the `dist/` directory, ready to deploy to any sta
 1. Click the **Settings** icon (⚙️) in the top-right corner
 2. Fill in your SIP credentials:
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Display Name** | Your name for caller ID | `Erik Bos` |
-| **SIP URI** | Your SIP address | `sip:erik@sip.example.com` |
-| **Auth Username** | Authentication username | `erik` or `12345` |
-| **Password** | Your SIP password | `••••••••` |
-| **WebSocket Server** | WSS endpoint URL | `wss://sip.example.com:8089/ws` |
-| **STUN/TURN Servers** | ICE servers (one per line) | See below |
+| Field                 | Description                | Example                         |
+| --------------------- | -------------------------- | ------------------------------- |
+| **Display Name**      | Your name for caller ID    | `Erik Bos`                      |
+| **SIP URI**           | Your SIP address           | `sip:erik@sip.example.com`      |
+| **Auth Username**     | Authentication username    | `erik` or `12345`               |
+| **Password**          | Your SIP password          | `••••••••`                      |
+| **WebSocket Server**  | WSS endpoint URL           | `wss://sip.example.com:8089/ws` |
+| **STUN/TURN Servers** | ICE servers (one per line) | See below                       |
 
 ### STUN/TURN Server Configuration
 
 **STUN Server Format:**
+
 ```
 stun:stun.l.google.com:19302
 ```
 
 **TURN Server Format:**
+
 ```
 turn:turn.example.com:3478,username,password
 ```
 
 **Multiple Servers:**
+
 ```
 stun:stun.l.google.com:19302
 stun:stun1.l.google.com:19302
@@ -152,6 +164,7 @@ turn:turn.example.com:3478,myuser,mypass
 ### Example Configurations
 
 #### Twilio
+
 ```
 Display Name: Your Name
 SIP URI: sip:your-client-name@your-account.pstn.twilio.com
@@ -162,6 +175,7 @@ STUN/TURN: stun:global.stun.twilio.com:3478
 ```
 
 #### Self-hosted Asterisk
+
 ```
 Display Name: Your Name
 SIP URI: sip:1001@asterisk.example.com
@@ -212,19 +226,20 @@ Open Browser DevTools (`F12` or `Cmd+Option+I`) to view:
 ### Debug Panel
 
 The in-app debug panel shows:
+
 - Current connection status
 - Call state
 - Registration status
 
 ### Common Issues
 
-| Issue | Solution |
-|-------|----------|
-| "Not registered" error | Check SIP credentials and WebSocket URL |
-| No audio | Check browser microphone permissions |
-| Connection fails | Verify WebSocket server supports WSS |
-| Calls don't connect | Check STUN/TURN server configuration |
-| One-way audio | Verify NAT/firewall settings, add TURN server |
+| Issue                  | Solution                                      |
+| ---------------------- | --------------------------------------------- |
+| "Not registered" error | Check SIP credentials and WebSocket URL       |
+| No audio               | Check browser microphone permissions          |
+| Connection fails       | Verify WebSocket server supports WSS          |
+| Calls don't connect    | Check STUN/TURN server configuration          |
+| One-way audio          | Verify NAT/firewall settings, add TURN server |
 
 ## 🏗️ Architecture
 
@@ -288,6 +303,7 @@ Contributions are welcome! This project is open source and community-driven.
 ### Bug Reports
 
 Found a bug? Please open an issue with:
+
 - Browser and version
 - Steps to reproduce
 - Expected vs actual behavior
@@ -328,12 +344,6 @@ Built with these amazing open-source projects:
 - [JsSIP](https://jssip.net/) - SIP/WebRTC library
 - [Lucide Icons](https://lucide.dev/) - Icon set
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
-
-## 📞 Support
-
-- 📖 [Documentation](https://github.com/3monthsfree/React-Phone/wiki)
-- 🐛 [Issue Tracker](https://github.com/3monthsfree/React-Phone/issues)
-- 💬 [Discussions](https://github.com/3monthsfree/React-Phone/discussions)
 
 ---
 
