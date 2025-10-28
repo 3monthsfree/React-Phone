@@ -57,7 +57,7 @@ Modern WebRTC Phone is a fully-featured, browser-based softphone that enables vo
 
 ## 🎬 Demo
 
-![Modern WebRTC Phone Interface](https://via.placeholder.com/800x600/1e293b/ffffff?text=Modern+WebRTC+Phone)
+![Modern WebRTC Phone Interface](./public/react-phone.png)
 
 _A sleek, modern interface for browser-based calling_
 
